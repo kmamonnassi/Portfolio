@@ -1,0 +1,22 @@
+#welcome-logo {
+	font-size: 40px;
+	font-weight: bold;
+	margin:50px;
+}
+
+#table-contents {
+	text-align: center;
+	display: table;
+	margin:50px;
+	border-collapse: separate;
+	border-spacing: 20px 0;
+}
+
+.contents-button {
+	width:100px;
+	height:100px; 
+	border: solid;
+	border-radius: 50%;
+	vertical-align: middle;
+    display: table-cell;
+}

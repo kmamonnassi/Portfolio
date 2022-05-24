@@ -1,3 +1,17 @@
-#profile-box{
+.profile-box{
     text-align: left;
+}
+
+#profile-award tr td{
+    padding-top: 10px;
+    padding-right: 20px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#profile-introduction tr td{
+    padding-top: 10px;
+    padding-right: 20px;
+    text-align: left;
+    vertical-align: top;
 }

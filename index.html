@@ -6,16 +6,24 @@
     <link rel="stylesheet" href="contents.css">
     <link rel="stylesheet" href="game_element.css">
     <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="welcome.css">
 </head>
 <body>
     <div id="header">
 
     </div>
     <div id="welcome" class="contents">
-        <h1>Welcome</h1>
+        <div id="welcome-logo">Welcome</div>
         <p>ようこそ。</p>
         <p>ここは柴田大樹のポートフォリオサイトです。</p>
         <p>これまでに制作したゲームや、スキルについて掲載しています。</p>
+
+        <div id="table-contents">
+            <div class="contents-button">Works</div>
+            <div class="contents-button">Profile</div>
+            <div class="contents-button">Twitter</div>
+        </div>
+
     </div>
     <div id="about" class="contents">
         <h1>About this site</h1>
@@ -23,20 +31,21 @@
     </div>
     <div id="works" class="contents">
         <h1>Works</h1>
-        <div id="game-elements">
+        <h3>個人的な代表作</h3>
+        <div class="game-elements">
             <div class="game-element">
                 <div class="thumbnail">
-                    <a href="https://kmamonnassi.github.io/ksg_factory.io/"><img src="Works\RoadsideInHell\thumbnail.png"></a>
+                    <a href="https://kmamonnassi.github.io/ksg_factory.io/"><img src="Works\KARAGE.png"></a>
                 </div>
                 <div class="about">
                     <p>1年生の頃の代表作品</p>
-                    <p>改造人間カラアゲが行く</p>
+                    <p>改造人間カラアゲが世界を冒険する</p>
                     <p>2Dアクションゲーム</p>
                 </div>
             </div>
             <div class="game-element">
                 <div class="thumbnail">
-                    <a href="https://kmamonnassi.github.io/ksg_factory.io/"><img src="Works\RoadsideInHell\thumbnail.png"></a>
+                    <a href="https://kmamonnassi.github.io/ksg_factory.io/"><img src="Works\RoadsideInHell.png"></a>
                 </div>
                 <div class="about">
                     <p>2年生の頃の代表作品</p>
@@ -46,7 +55,7 @@
             </div>
             <div class="game-element">
                 <div class="thumbnail">
-                    <a href="https://kmamonnassi.github.io/ksg_factory.io/"><img src="Works\RoadsideInHell\thumbnail.png"></a>
+                    <a href="https://kmamonnassi.github.io/ksg_factory.io/"><img src="Works\OutrageDisco.png"></a>
                 </div>
                 <div class="about">
                     <p>3年生の頃の代表作品</p>
@@ -55,23 +64,109 @@
                 </div>
             </div>
         </div>
+        <h3>その他</h3>
+        <div class="game-elements">
+            <div class="game-element">
+                <div class="thumbnail">
+                    <a href="https://twitter.com/daiki_shibata1/status/1431526756226408449"><img src="Works\FuiteAzayakanaru.png"></a>
+                </div>
+                <div class="about">
+                    <p>3日間ゲームジャムにて</p>
+                    <p>即興で組まれたチームで制作</p>
+                    <p>色褪せた世界でタンポポを咲かせましょう</p>
+                </div>
+            </div>
+            <div class="game-element">
+                <div class="thumbnail">
+                    <a href="https://twitter.com/daiki_shibata1/status/1466681065108819974"><img src="Works\ProgramingPuzzle.png"></a>
+                </div>
+                <div class="about">
+                    <p>プログラミングパズルゲーム</p>
+                    <p>自作インタプリタ言語を用いて</p>
+                    <p>プレイヤーをゴールへ導きましょう</p>
+                </div>
+            </div>
+            <div class="game-element">
+                <div class="thumbnail">
+                    <a href="https://twitter.com/daiki_shibata1/status/1411835853744218116"><img src="Works\Disjointed.png"></a>
+                </div>
+                <div class="about">
+                    <p>シンプルなローグライクRPG</p>
+                    <p>夢の中で勇者が旅をします</p>
+                    <p>後に獄落道中へ派生することに</p>
+                </div>
+            </div>
+            <div class="game-element">
+                <div class="thumbnail">
+                    <a href="https://twitter.com/daiki_shibata1/status/1369537727050354689"><img src="Works\ForeverJourney.png"></a>
+                </div>
+                <div class="about">
+                    <p>無限の円環の中で好きな女の子を追いかける</p>
+                    <p>ロマンチック2Dランゲーム</p>
+                    <p>輪の中をぐるぐる回り続けます</p>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="profile" class="contents">
-        <h1>Profile</h1>
+        <h2>Profile</h2>
 
-        <div id="profile-box">
-            <p>柴田 大樹  Shibata Daiki</p>
+        <div class="profile-box">
+            <table id="profile-introduction">
+                <tr>
+                    <td rowspan="5"><img src="Profile/Me.png" width="180px" height="180px"></td>
+                    <td>柴田 大樹  Shibata Daiki</td>
+                </tr>
+                <tr>
+                    <td>2002年愛知県生まれ。</td>
+                </tr>
+                <tr>
+                    <td>名古屋工学院専門学校ゲーム総合学科3年生</td>
+                </tr>
+                <tr>
+                    <td>高校一年生の頃からゲーム開発の面白さに気づき、</td>
+                </tr>
+                <tr>
+                    <td>「企業レベルのゲームを作る」ことを目標にゲームを作り続けてきました。</td>
+                </tr>
+            </table>
+        </div>
             <div class="wide"></div>
-            <p>2002年愛知県生まれ。</p>
-            <p>名古屋工学院専門学校ゲーム総合学科3年生</p>
-            <p>高校一年生の頃からゲーム開発の面白さに気づき、</p>
-            <p>「企業レベルのゲームを作る」ことを目標にゲームを作り続けてきました。</p>
             <div class="wide"></div>
             <div class="wide"></div>
-            <p>2020年　ゲームクリエイター甲子園2020 総合大賞第2位</p>
-            <p>2021年　第九回全国専門学校ゲームコンペティション　ファイナリスト</p>
-            <p>　　　　ゲームクリエイター甲子園2021 2Dグラフィックス賞</p>
-            <p>2022年　第十回全国専門学校ゲームコンペティション　ファイナリスト</p>
+            <div class="wide"></div>
+            <div class="wide"></div>
+            <div class="wide"></div>
+            <div class="wide"></div>
+            <div class="wide"></div>
+            <div class="wide"></div>
+            <div class="wide"></div>
+            <div class="wide"></div>
+            <div class="wide"></div>
+
+        <h2>Awards</h2>
+        <div class="profile-box">
+            <table id="profile-award">
+                <tr>
+                    <td>2020年</td>
+                    <td>ゲームクリエイター甲子園2020</td>
+                    <td>総合大賞第2位</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">2021年</td>
+                    <td>第九回全国専門学校ゲームコンペティション</td>
+                    <td>ファイナリスト</td>
+                </tr>
+                <tr>
+                    <td>ゲームクリエイター甲子園2021</td>
+                    <td>2Dグラフィックス賞</td>
+                </tr>
+                <tr>
+                    <td>2022年</td>
+                    <td>第十回全国専門学校ゲームコンペティション</td>
+                    <td>ファイナリスト</td>
+                </tr>
+            </table>
         </div>
     </div>
     <div id="link" class="contents">
