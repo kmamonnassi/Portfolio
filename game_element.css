@@ -1,0 +1,17 @@
+#game-elements{
+    text-align:center;
+}
+
+.game-element {
+    padding: 3px;
+    display: inline-block;
+    border: thick double #eeeeee;
+}
+
+.game-element > .thumbnail > a > img{
+    width: 384px;
+    height: 216px;
+}
+.game-element > .about > p {
+    font-size: 20px;
+}

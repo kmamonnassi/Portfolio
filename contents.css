@@ -1,0 +1,41 @@
+html, body {
+    font-family: "ƒqƒ‰ƒMƒmŠÛƒS Pro W4","ƒqƒ‰ƒMƒmŠÛƒS Pro","Hiragino Maru Gothic Pro","ƒqƒ‰ƒMƒmŠpƒS Pro W3","Hiragino Kaku Gothic Pro","HGŠÛºÞ¼¯¸M-PRO","HGMaruGothicMPRO";
+    height: 100%;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    color: #eeeeee;
+    overflow-x: hidden;
+}
+
+.contents {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome {
+    background-color: #333333;
+}
+
+#about {
+    background-color: #444444;
+}
+
+#works {
+    background-color: #333333;
+}
+
+#profile {
+    background-color: #444444;
+}
+
+.wide {
+    padding-top: 10px;
+}
