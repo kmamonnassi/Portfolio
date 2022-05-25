@@ -1,0 +1,22 @@
+#reflection-context  {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+}
+
+.reflection-box{
+    display: inline-block;
+    align-items: center;
+    flex-direction: column;
+    margin:0.25vmax;
+    border-radius: 1vmax;
+    border: 1px solid;
+    padding: 15px;
+}
+
+.reflection-box ul {
+    list-style: disc;
+    text-align: left;
+    padding-left: 15px;
+}

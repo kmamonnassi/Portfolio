@@ -1,0 +1,14 @@
+#screenshots table tr th img {
+    width: 20vmax;
+}
+
+#screenshots table {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-spacing: 10px;
+}
+
+#screenshots {
+    display: inner-block;
+}

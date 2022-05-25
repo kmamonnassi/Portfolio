@@ -1,0 +1,25 @@
+#information .underline {
+    text-decoration: underline;
+    text-decoration-color: #009900;
+}
+
+#information table tr th{
+    padding:1vmax;
+    font-size: 1.2vmax;
+    border-bottom: solid 1px white;
+}
+
+#information table {
+    border-collapse: collapse;
+}
+
+#information h1 {
+    margin-bottom:3vmax;
+}
+
+#information {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}

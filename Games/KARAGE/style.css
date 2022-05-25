@@ -1,0 +1,50 @@
+body{
+	background-image: url("img/forest.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(12px);
+	font-family: "ƒqƒ‰ƒMƒmŠÛƒS Pro W4","ƒqƒ‰ƒMƒmŠÛƒS Pro","Hiragino Maru Gothic Pro","ƒqƒ‰ƒMƒmŠpƒS Pro W3","Hiragino Kaku Gothic Pro","HGŠÛºÞ¼¯¸M-PRO","HGMaruGothicMPRO";
+    height: 100%;
+    font-size: 1vmax;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    color: #eeeeee;
+    padding-left: 10vmax;
+    padding-right: 10vmax;
+    padding-top: 1vmax;
+    padding-bottom: 1vmax;
+    text-align:center;
+}
+
+#background{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: auto;
+    padding-top: 2vmax;
+    padding-bottom: 2vmax;
+    animation: background-animation 2s ease 0s 1 alternate none running;
+}
+
+@keyframes background-animation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.line {
+    width: 90%;
+    margin-left:5%;
+    border-bottom: 5px dashed #ffffff;
+    margin-top:5vmax;
+    margin-bottom:5vmax;
+}

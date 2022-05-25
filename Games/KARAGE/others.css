@@ -1,0 +1,17 @@
+.other-contents {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:0.25vmax;
+    border-radius: 1vmax;
+    border: 1px solid;
+    padding: 15px;
+}
+
+#other-contents-layout {
+	display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    flex-direction: row;
+}
