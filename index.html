@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="game_element.css">
     <link rel="stylesheet" href="profile.css">
     <link rel="stylesheet" href="welcome.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="welcome_button.js"></script>
 </head>
 <body>
     <div id="header">
@@ -17,25 +19,28 @@
         <p>ようこそ。</p>
         <p>ここは柴田大樹のポートフォリオサイトです。</p>
         <p>これまでに制作したゲームや、スキルについて掲載しています。</p>
-
         <div id="table-contents">
-            <div class="contents-button">Works</div>
-            <div class="contents-button">Profile</div>
-            <div class="contents-button">Twitter</div>
+            <div class="contents-button" id="skills-teleport-button">Skills</div>
+            <div class="contents-button" id="games-teleport-button">Games</div>
+            <div class="contents-button" id="profile-teleport-button">Profile</div>
+            <div class="contents-button" id="link-teleport-button">Twitter</div>
         </div>
-
     </div>
-    <div id="about" class="contents">
-        <h1>About this site</h1>
+    <div id="skills" class="contents">
+        <h1>Skills</h1>
+        
+    </div>
+    <div id="games" class="contents">
+        <h1>Games</h1>
         <div class="wide"></div>
-    </div>
-    <div id="works" class="contents">
-        <h1>Works</h1>
+        <div class="wide"></div>
+        <div class="wide"></div>
+        <div class="wide"></div>
         <h3>個人的な代表作</h3>
         <div class="game-elements">
             <div class="game-element">
                 <div class="thumbnail">
-                    <a href="https://kmamonnassi.github.io/ksg_factory.io/"><img src="Works\KARAGE.png"></a>
+                    <a href="https://kmamonnassi.github.io/ksg_factory.io/"><img src="Games\KARAGE.png"></a>
                 </div>
                 <div class="about">
                     <p>1年生の頃の代表作品</p>
@@ -45,7 +50,7 @@
             </div>
             <div class="game-element">
                 <div class="thumbnail">
-                    <a href="https://kmamonnassi.github.io/ksg_factory.io/"><img src="Works\RoadsideInHell.png"></a>
+                    <a href="https://kmamonnassi.github.io/ksg_factory.io/"><img src="Games\RoadsideInHell.png"></a>
                 </div>
                 <div class="about">
                     <p>2年生の頃の代表作品</p>
@@ -55,7 +60,7 @@
             </div>
             <div class="game-element">
                 <div class="thumbnail">
-                    <a href="https://kmamonnassi.github.io/ksg_factory.io/"><img src="Works\OutrageDisco.png"></a>
+                    <a href="https://kmamonnassi.github.io/ksg_factory.io/"><img src="Games\OutrageDisco.png"></a>
                 </div>
                 <div class="about">
                     <p>3年生の頃の代表作品</p>
@@ -64,11 +69,15 @@
                 </div>
             </div>
         </div>
+        <div class="wide"></div>
+        <div class="wide"></div>
+        <div class="wide"></div>
+        <div class="wide"></div>
         <h3>その他</h3>
         <div class="game-elements">
             <div class="game-element">
                 <div class="thumbnail">
-                    <a href="https://twitter.com/daiki_shibata1/status/1431526756226408449"><img src="Works\FuiteAzayakanaru.png"></a>
+                    <a href="https://twitter.com/daiki_shibata1/status/1431526756226408449"><img src="Games\FuiteAzayakanaru.png"></a>
                 </div>
                 <div class="about">
                     <p>3日間ゲームジャムにて</p>
@@ -78,7 +87,7 @@
             </div>
             <div class="game-element">
                 <div class="thumbnail">
-                    <a href="https://twitter.com/daiki_shibata1/status/1466681065108819974"><img src="Works\ProgramingPuzzle.png"></a>
+                    <a href="https://twitter.com/daiki_shibata1/status/1466681065108819974"><img src="Games\ProgramingPuzzle.png"></a>
                 </div>
                 <div class="about">
                     <p>プログラミングパズルゲーム</p>
@@ -88,7 +97,7 @@
             </div>
             <div class="game-element">
                 <div class="thumbnail">
-                    <a href="https://twitter.com/daiki_shibata1/status/1411835853744218116"><img src="Works\Disjointed.png"></a>
+                    <a href="https://twitter.com/daiki_shibata1/status/1411835853744218116"><img src="Games\Disjointed.png"></a>
                 </div>
                 <div class="about">
                     <p>シンプルなローグライクRPG</p>
@@ -98,7 +107,7 @@
             </div>
             <div class="game-element">
                 <div class="thumbnail">
-                    <a href="https://twitter.com/daiki_shibata1/status/1369537727050354689"><img src="Works\ForeverJourney.png"></a>
+                    <a href="https://twitter.com/daiki_shibata1/status/1369537727050354689"><img src="Games\ForeverJourney.png"></a>
                 </div>
                 <div class="about">
                     <p>無限の円環の中で好きな女の子を追いかける</p>
@@ -114,7 +123,7 @@
         <div class="profile-box">
             <table id="profile-introduction">
                 <tr>
-                    <td rowspan="5"><img src="Profile/Me.png" width="180px" height="180px"></td>
+                    <td rowspan="5"><img src="Profile/Me.png"></td>
                     <td>柴田 大樹  Shibata Daiki</td>
                 </tr>
                 <tr>
@@ -131,11 +140,6 @@
                 </tr>
             </table>
         </div>
-            <div class="wide"></div>
-            <div class="wide"></div>
-            <div class="wide"></div>
-            <div class="wide"></div>
-            <div class="wide"></div>
             <div class="wide"></div>
             <div class="wide"></div>
             <div class="wide"></div>
@@ -171,8 +175,13 @@
     </div>
     <div id="link" class="contents">
         <h1>Twitter</h1>
-        <a class="twitter-timeline" data-lang="ja" data-width="600" data-height="600" data-theme="dark" href="https://twitter.com/daiki_shibata1?ref_src=twsrc%5Etfw">Tweets by daiki_shibata1</a>
+        <div class="wide"></div>
+        <div class="wide"></div>
+        <div class="wide"></div>
+        <div class="wide"></div>
+        <div class="wide"></div>
+        <a class="twitter-timeline" data-lang="ja" data-width="600" data-height="500" data-theme="dark" href="https://twitter.com/daiki_shibata1?ref_src=twsrc%5Etfw">Tweets by daiki_shibata1</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
-</body>
+    </body>
 </html>

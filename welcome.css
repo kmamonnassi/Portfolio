@@ -1,5 +1,5 @@
 #welcome-logo {
-	font-size: 40px;
+	font-size: 3vmax;
 	font-weight: bold;
 	margin:50px;
 }
@@ -7,16 +7,30 @@
 #table-contents {
 	text-align: center;
 	display: table;
-	margin:50px;
+	margin: 50px;
 	border-collapse: separate;
-	border-spacing: 20px 0;
+	border-spacing: 4vmax 0;
+}
+
+.contents-button:hover {
+	color: #333333;
+	background-color: #eeeeee;
 }
 
 .contents-button {
-	width:100px;
-	height:100px; 
+	color: #eeeeee;
+	background-color: #333333;
+	width: 10vmax;
+	height: 10vmax;
 	border: solid;
 	border-radius: 50%;
 	vertical-align: middle;
-    display: table-cell;
+	display: table-cell;
+	font-size: 2vmax;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	transition: all 0.3s;
 }

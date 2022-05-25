@@ -9,6 +9,11 @@
     vertical-align: top;
 }
 
+#profile-introduction tr td img {
+    width: auto;
+    height: 16vmax;
+}
+
 #profile-introduction tr td{
     padding-top: 10px;
     padding-right: 20px;

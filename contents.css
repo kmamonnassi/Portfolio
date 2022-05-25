@@ -1,12 +1,11 @@
 html, body {
     font-family: "ƒqƒ‰ƒMƒmŠÛƒS Pro W4","ƒqƒ‰ƒMƒmŠÛƒS Pro","Hiragino Maru Gothic Pro","ƒqƒ‰ƒMƒmŠpƒS Pro W3","Hiragino Kaku Gothic Pro","HGŠÛºÞ¼¯¸M-PRO","HGMaruGothicMPRO";
     height: 100%;
-    font-size: 18px;
+    font-size: 1vmax;
     margin: 0;
     padding: 0;
     background-color: #333333;
     color: #eeeeee;
-    overflow-x: hidden;
 }
 
 .contents {
@@ -17,28 +16,31 @@ html, body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 5px;
 }
 
 #welcome {
     background-color: #333333;
-    font-size: 21px;
+    font-size: 1.5vmax;
 }
 
-#about {
+#skills {
     background-color: #444444;
 }
 
-#works {
+#games {
     background-color: #333333;
-    height: 120%;
+    height: 150%;
 }
 
 #profile {
     background-color: #444444;
-    font-size: 28px;
+    font-size: 1.15vmax;
 }
 
 .wide {
-    padding-top: 10px;
+    padding-top: 0.5vmax;
+}
+
+h1 {
+    font-size: 3vmax;
 }
