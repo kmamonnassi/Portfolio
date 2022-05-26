@@ -1,0 +1,31 @@
+body {
+    background-image: url("img/hades.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: "ƒqƒ‰ƒMƒmŠÛƒS Pro W4","ƒqƒ‰ƒMƒmŠÛƒS Pro","Hiragino Maru Gothic Pro","ƒqƒ‰ƒMƒmŠpƒS Pro W3","Hiragino Kaku Gothic Pro","HGŠÛºÞ¼¯¸M-PRO","HGMaruGothicMPRO";
+    font-size: 1.5vmax;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#blur-filter {
+    backdrop-filter: blur(12px);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+
+.contents {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
