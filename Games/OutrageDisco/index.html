@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="screenshot.css">
     <link rel="stylesheet" href="pv.css">
     <link rel="stylesheet" href="information.css">
+    <link rel="stylesheet" href="impression.css">
 </head>
 <body>
     <div id="logo-context">
@@ -20,7 +21,8 @@
         <div id="about">
             <h1>概要</h1>
             <p>「殴って壊してリズムに乗れ！」</p>
-            <p>リズムに乗りながら敵を倒す感触を意識した、リズムアクションゲーム！</p>
+            <p>リズムに乗りながら敵を倒す「感触」を意識した、リズムアクションゲーム！</p>
+            <p>日本ゲーム大賞2022アマチュア部門に向けての作品。</p>
         </div>
         <div class="line"></div>
 
@@ -37,7 +39,15 @@
                 </tr>
                 <tr>
                     <th class="underline">制作人数</th>
-                    <th>3人(音ゲーのシステム、ツール制作、グラフィック全般を担当)</th>
+                    <th>3人</th>
+                </tr>
+                <tr>
+                    <th class="underline">担当・役職</th>
+                    <th>チームリーダー<br>音ゲーのシステム、ツール制作、グラフィック全般を担当</th>
+                </tr>
+                <tr>
+                    <th class="underline">制作年度</th>
+                    <th>3年生</th>
                 </tr>
                 <tr>
                     <th class="underline">制作期間</th>
@@ -64,14 +74,14 @@
         <div id="screenshots">
             <table>
                 <tr>
-                    <th><img src="img/.png" /></th>
-                    <th><img src="img/.png" /></th>
-                    <th><img src="img/.png" /></th>
+                    <th><img src="img/title.png" /></th>
+                    <th><img src="img/stage_select.png" /></th>
+                    <th><img src="img/ultra_beam.png" /></th>
                 </tr>
                 <tr>
-                    <th><img src="img/.png" /></th>
-                    <th><img src="img/.png" /></th>
-                    <th><img src="img/.png" /></th>
+                    <th><img src="img/shield.png" /></th>
+                    <th><img src="img/mechanical_boss.png" /></th>
+                    <th><img src="img/shadow_boss.png" /></th>
                 </tr>
             </table>
         </div>
@@ -85,19 +95,15 @@
                 <div class="reflection-box">
                     <h2>ゲームとしての反省点</h2>
                     <ul type="circle">
-                        <li>ゲームバランスがとても悪い</li>
-                        <li>ストーリーが全くない</li>
-                        <li>頭をカラアゲにした理由が全くない</li>
-                        <li>ゲーム全体が単調で味気ない</li>
+                        <li>世界観を決めずに作り始めてしまった</li>
+                        <li>画面の揺れやエフェクトが多く、目が疲れてしまう可能性がある<br>(設定画面から背景の明るさや画面の揺れを調整できるようにした)</li>
                     </ul>
                 </div>
                 <div class="reflection-box">
-                    <h2>プログラムに関する反省点</h2>
+                    <h2>開発に関する反省点</h2>
                     <ul type="circle">
-                        <li>SOLID原則をほぼ全て破ってしまった</li>
-                        <li>public staticを多用し、保守性のないコードを量産した</li>
-                        <li>１つのスクリプトに処理を詰め込みすぎた</li>
-                        <li>インターフェイスの使い方を知らなかった</li>
+                        <li>チームメンバーの一人の仕事が早い段階で終わってしまい、暇な思いをさせてしまった<br>(その後はデバッガーやアドバイザーとして活躍してくれた)</li>
+                        <li>役割分担や進捗管理をおろそかにしてしまった</li>
                     </ul>
                 </div>
             </div>
@@ -107,9 +113,17 @@
 
         <div id="impression">
             <h1>所感</h1>
-            <p>１年生の頃に作ったものということもあり、数多くの問題を抱えたゲームとなってしまいました。</p>
-            <p>しかし、ゲームクリエイター甲子園で２位を取ったり、<a href="https://twitter.com/Gamecreators_G/status/1413785125574295555">地方番組出演</a>や、<a href="https://www.nhk.jp/p/hamatta/ts/KNY2YKWLG9/episode/te/BLV7L6KZ38/">NHK出演</a>のきっかけにもなりました。</p>
-            <p>そして、上記に上げた反省点は２年生以降の制作に活かされるなど、自分の中での自信や開発の糧となりました。</p>
+            <div id="impression-texts">
+                <p>コンテストに向けてのチーム開発は初めてで、チームリーダーということもありプレッシャーを感じていました。</p>
+                <p>しかし、チームメンバーと仲良くなるにつれて、プレッシャーよりもチーム制作の楽しさのほうが勝るようになり、そこからは順調に事が運ぶようになっていたと思います。</p>
+                <p>
+                    この頃はZenjectやプログラムの設計について勉強しており、チーム全体でクリーンアーキテクチャを意識したつくりにしようとも考えましたが、周りのレベルに合わせてあまり設計をしないようにしました。<br>
+                    (今はそれでよかったと思っています。開発を円滑にすることこそ設計だということを学びました。)
+                </p>
+                <p></p>
+                <p>今までの個人制作で一番辛かったことが、「自分のゲームについて本気で考えてくれる人がいない」ということで、レベルデザインの調整ミスが目立ってしまいました。</p>
+                <p>今回はチームメンバー一人一人がこのゲームに向き合い、本気で取り組むことができたので、今までのゲームと比べてクオリティはかなり高くなっていると思います。</p>
+            </div>
         </div>
     </div>
 </body>

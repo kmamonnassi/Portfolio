@@ -1,0 +1,9 @@
+#impression #impression-texts {
+	text-align:left;
+}
+#impression {
+	width: 80%;
+    display: inline-block;
+    align-items: center;
+    flex-direction: column;
+}

@@ -5,13 +5,11 @@
 
 #logo {
     display: inline-block;
-    padding-top: 150px;
-    padding-bottom: 150px;
     z-index:2;
 }
 
 #logo img {
-    width:70vw;
+    width:50vw;
     filter: drop-shadow(0 0 30px black);
     animation: logo-animation 1s ease 0s 1 alternate none running;
 }
@@ -19,15 +17,11 @@
 @keyframes logo-animation {
     0% {
         width:1vw;
-    }
-
-    60% {
-        width:80vw;
-        transform: rotate(380deg);
+        opacity:0;
     }
 
     100% {
-        width:70vw;
-        transform: rotate(360deg);
+        width:50vw;
+        opacity:1;
     }
 }
