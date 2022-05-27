@@ -1,0 +1,34 @@
+.skill-item img {
+    width: 6vmax;
+    height: auto;
+    margin-right: 1vmax;
+}
+
+.skill-item .name {
+    font-size: 1.25vmax;
+}
+
+.skill-item:hover {
+    color: #333333;
+    background-color: #eeeeee;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 1vmax;
+    border-radius: 5vmax;
+    border: 5px solid #eeeeee;
+    overflow: hidden;
+    padding-right: 2vmax;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+    

@@ -4,11 +4,21 @@ body {
     background-size: cover;
     background-position: center;
     font-family: "ƒqƒ‰ƒMƒmŠÛƒS Pro W4","ƒqƒ‰ƒMƒmŠÛƒS Pro","Hiragino Maru Gothic Pro","ƒqƒ‰ƒMƒmŠpƒS Pro W3","Hiragino Kaku Gothic Pro","HGŠÛºÞ¼¯¸M-PRO","HGMaruGothicMPRO";
-    font-size: 1.5vmax;
+    font-size: 1vmax;
     text-align: center;
     color: white;
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+#background {
+    background-color: rgba(0,0,0,0.3);
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    padding-top: 2vmax;
+    padding-bottom: 2vmax;
 }
 
 #blur-filter {
@@ -22,10 +32,17 @@ body {
 
 .contents {
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.line {
+    width: 90%;
+    margin-left: 5%;
+    border-bottom: 5px dashed #ffffff;
+    margin-top: 5vmax;
+    margin-bottom: 5vmax;
 }

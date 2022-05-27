@@ -1,5 +1,6 @@
 .game-elements{
     text-align:center;
+    font-size: 3vmax;
 }
 
 .game-element > .thumbnail > a > img {
@@ -9,6 +10,15 @@
 
 .game-element > .about > p {
     font-size: 1vmax;
+    margin: 0.25vmax;
+}
+
+.game-element > .name {
+    font-size: 1vw;
+    font-weight: bold;
+    border-bottom: 2px solid #eeeeee;
+    padding-top: 0.25vmax;
+    padding-bottom: 0.5vmax;
 }
 
 .game-element {

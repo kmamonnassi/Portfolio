@@ -23,17 +23,17 @@ html, body {
     font-size: 1.5vmax;
 }
 
-#skills {
-    background-color: #444444;
+#games {
+    background-color: #222222;
+    height: 140%;
 }
 
-#games {
+#skills {
     background-color: #333333;
-    height: 150%;
 }
 
 #profile {
-    background-color: #444444;
+    background-color: #222222;
     font-size: 1.15vmax;
 }
 

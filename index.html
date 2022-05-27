@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="game_element.css">
     <link rel="stylesheet" href="profile.css">
     <link rel="stylesheet" href="welcome.css">
+    <link rel="stylesheet" href="skills.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="welcome_button.js"></script>
 </head>
@@ -20,15 +21,11 @@
         <p>ここは柴田大樹のポートフォリオサイトです。</p>
         <p>これまでに制作したゲームや、スキルについて掲載しています。</p>
         <div id="table-contents">
-            <div class="contents-button" id="skills-teleport-button">Skills</div>
             <div class="contents-button" id="games-teleport-button">Games</div>
+            <div class="contents-button" id="skills-teleport-button">Skills</div>
             <div class="contents-button" id="profile-teleport-button">Profile</div>
             <div class="contents-button" id="link-teleport-button">Twitter</div>
         </div>
-    </div>
-    <div id="skills" class="contents">
-        <h1>Skills</h1>
-        
     </div>
     <div id="games" class="contents">
         <h1>Games</h1>
@@ -42,6 +39,7 @@
                 <div class="thumbnail">
                     <a href="Games/KARAGE/index.html"><img src="Games\KARAGE.png"></a>
                 </div>
+                <div class="name">KARAGE(カラアゲ)</div>
                 <div class="about">
                     <p>個人制作作品</p>
                     <p>1年生の頃の代表作品</p>
@@ -54,6 +52,7 @@
                 <div class="thumbnail">
                     <a href="Games/RoadsideInHell/index.html"><img src="Games\RoadsideInHell.png"></a>
                 </div>
+                <div class="name">獄落道中(ごくらくどうちゅう)</div>
                 <div class="about">
                     <p>個人制作作品</p>
                     <p>2年生の頃の代表作品</p>
@@ -66,6 +65,7 @@
                 <div class="thumbnail">
                     <a href="Games/OutrageDisco/index.html"><img src="Games\OutrageDisco.png"></a>
                 </div>
+                <div class="name">OutrageDisco(アウトレイジディスコ)</div>
                 <div class="about">
                     <p>チーム制作作品</p>
                     <p>(音ゲーのシステム、ステージエディタ担当)</p>
@@ -85,6 +85,7 @@
                 <div class="thumbnail">
                     <a href="https://twitter.com/daiki_shibata1/status/1431526756226408449"><img src="Games\FuiteAzayakanaru.png"></a>
                 </div>
+                <div class="name">吹いて鮮やかなる</div>
                 <div class="about">
                     <p>チーム制作作品(プログラム全般担当)</p>
                     <p>3日間ゲームジャムにて</p>
@@ -96,10 +97,11 @@
                 <div class="thumbnail">
                     <a href="https://twitter.com/daiki_shibata1/status/1466681065108819974"><img src="Games\ProgramingPuzzle.png"></a>
                 </div>
+                <div class="name">プログラミングパズル(タイトル未定)</div>
                 <div class="about">
                     <p>個人制作作品</p>
                     <p>プログラミングパズルゲーム</p>
-                    <p>自作インタプリタ言語を用いて</p>
+                    <p>専用のインタプリタ言語を用いて</p>
                     <p>プレイヤーをゴールへ導きましょう</p>
                 </div>
             </div>
@@ -107,6 +109,7 @@
                 <div class="thumbnail">
                     <a href="https://twitter.com/daiki_shibata1/status/1411835853744218116"><img src="Games\Disjointed.png"></a>
                 </div>
+                <div class="name">Disjointed(ディスジョインテッド)</div>
                 <div class="about">
                     <p>個人制作作品</p>
                     <p>シンプルなローグライクRPG</p>
@@ -118,6 +121,7 @@
                 <div class="thumbnail">
                     <a href="https://twitter.com/daiki_shibata1/status/1369537727050354689"><img src="Games\ForeverJourney.png"></a>
                 </div>
+                <div class="name">果てしない旅路</div>
                 <div class="about">
                     <p>個人制作作品</p>
                     <p>無限の円環の中で好きな女の子を追いかける</p>
@@ -125,6 +129,23 @@
                     <p>輪の中をぐるぐる回り続けます</p>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="skills" class="contents">
+        <h1>Skills</h1>
+        <div id="skill-list">
+            <div class="skill-item">
+                <img src="Skills/Zenject.png">
+                <div class="name">ZenjectやServiceLocator、Assembly Definitionを用いた保守性の高いプログラム</div>
+            </div>
+            <div class="skill-item">
+                <img src="Skills/AAS.png">
+                <div class="name">Addressable Asset Systemを用いたアセット管理</div>
+            </div>
+            <a href="Skills/URP/index.html" class="skill-item">
+                <img src="Skills/URP.png">
+                <div class="name">URPを用いた高クオリティなグラフィック、シェーダー開発</div>
+            </a>
         </div>
     </div>
     <div id="profile" class="contents">
@@ -150,13 +171,13 @@
                 </tr>
             </table>
         </div>
-            <div class="wide"></div>
-            <div class="wide"></div>
-            <div class="wide"></div>
-            <div class="wide"></div>
-            <div class="wide"></div>
-            <div class="wide"></div>
-            <div class="wide"></div>
+        <div class="wide"></div>
+        <div class="wide"></div>
+        <div class="wide"></div>
+        <div class="wide"></div>
+        <div class="wide"></div>
+        <div class="wide"></div>
+        <div class="wide"></div>
 
         <h2>Awards</h2>
         <div class="profile-box">
@@ -193,5 +214,5 @@
         <a class="twitter-timeline" data-lang="ja" data-width="600" data-height="500" data-theme="dark" href="https://twitter.com/daiki_shibata1?ref_src=twsrc%5Etfw">Tweets by daiki_shibata1</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
-    </body>
+</body>
 </html>
