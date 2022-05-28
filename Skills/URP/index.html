@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Daiki Shibata Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background">
+        <h1>URP、ShaderGraphを利用し、ハイクオリティなグラフィックを実現</h1>
+
+        <div class="line"></div>
+
+        <p>絵、3Dモデル、UIの作成などはデザイナーの仕事ですが、デザイナーが仕上げてくれたデータを利用するのはプログラマです。</p>
+        <p>デザイナーの思った通りのグラフィックに仕上げるには、プログラマもデザイナーの知識を取り入れるべきではと思い、
+        Unity上でハイクオリティなグラフィックを実現できるURP(Universal Render Pipeline)というレンダリングパイプラインについて勉強しました。</p>
+        <div class="line"></div>
+        <p>自分のポートフォリオ内にあるゲームのほぼ全てにURPやShaderGraphが使われています。</p>
+        <table>
+            <tr>
+                <td><div class="imgs"><img src="img/URP1.png"></div></td>
+                <td><div class="imgs"><img src="img/URP2.png"></div></td>
+            </tr>
+            <tr>
+                <td><div class="imgs"><img src="img/URP3.png"></div></td>
+                <td><div class="imgs"><img src="img/URP4.png"></div></td>
+            </tr>
+        </table>
+        <p>こういったグラフィックを実現するために利用している機能として、</p>
+        <ul>
+            <li>ShaderGraph</li>
+            <li>Light2D</li>
+            <li>Renderer Feature</li>
+        </ul>
+        <p>などが挙げられます。</p>
+        <p>今回はShaderGraph解説していきます。</p>
+
+        <div class="line"></div>
+
+        <h2>ShaderGraphについて</h2>
+        <p>シェーダーは手描きでは難しい動きのあるグラフィックを作るのが得意で、自分は主に背景やオーラをまとうボスキャラなどに利用しています。</p>
+        <table>
+            <tr>
+                <td>
+                    <blockquote class="twitter-tweet"width="300"><p lang="ja" dir="ltr">UnityのShaderGraphで宇宙っぽい背景を作ってみた。<br>RPGの最終決戦とかの背景とか似合いそう。<a href="https://twitter.com/hashtag/unity?src=hash&amp;ref_src=twsrc%5Etfw">#unity</a> | <a href="https://twitter.com/hashtag/shadergraph?src=hash&amp;ref_src=twsrc%5Etfw">#shadergraph</a> | <a href="https://twitter.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> | <a href="https://twitter.com/hashtag/indiedev?src=hash&amp;ref_src=twsrc%5Etfw">#indiedev</a> <a href="https://t.co/nyzHn0JugH">pic.twitter.com/nyzHn0JugH</a></p>&mdash; Daiki_Shibata_Gamedev (@daiki_shibata1) <a href="https://twitter.com/daiki_shibata1/status/1464183093590327297?ref_src=twsrc%5Etfw">November 26, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </td>
+                <td>
+                    <blockquote class="twitter-tweet"width="300"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/pixelart?src=hash&amp;ref_src=twsrc%5Etfw">#pixelart</a> | <a href="https://twitter.com/hashtag/%E3%83%89%E3%83%83%E3%83%88%E7%B5%B5?src=hash&amp;ref_src=twsrc%5Etfw">#ドット絵</a> | <a href="https://twitter.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> | <a href="https://twitter.com/hashtag/indiedev?src=hash&amp;ref_src=twsrc%5Etfw">#indiedev</a><br>Finally done!<br>The new boss is complete! <a href="https://t.co/Q97nWGvHE5">pic.twitter.com/Q97nWGvHE5</a></p>&mdash; Daiki_Shibata_Gamedev (@daiki_shibata1) <a href="https://twitter.com/daiki_shibata1/status/1339563628337324032?ref_src=twsrc%5Etfw">December 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </td>
+                <td>
+                    <blockquote class="twitter-tweet"width="300"><p lang="en" dir="ltr">Made a new boss ☺<a href="https://twitter.com/hashtag/gamedev?src=hash&amp;ref_src=twsrc%5Etfw">#gamedev</a> | <a href="https://twitter.com/hashtag/indiedev?src=hash&amp;ref_src=twsrc%5Etfw">#indiedev</a> <a href="https://t.co/dJIdoPQKl1">pic.twitter.com/dJIdoPQKl1</a></p>&mdash; Daiki_Shibata_Gamedev (@daiki_shibata1) <a href="https://twitter.com/daiki_shibata1/status/1346781604379643905?ref_src=twsrc%5Etfw">January 6, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </td>
+            </tr>
+        </table>
+        <p>シェーダーグラフは通常のシェーダーと違いノードベースで組み立てることで作成します。</p>
+        <div class="imgs"><img src="img/ShaderGraph1.png"></div>
+
+        <p>通常のシェーダーのほうが柔軟で多様な模様を作ることができますが、CustomFunctionノードを利用することで、シェーダーグラフ内にHLSLシェーダーを利用することができます。</p>
+        <div class="imgs"><img src="img/ShaderGraph2.png"></div>
+        <p>(HLSLは現在勉強中です。)</p>
+        <p>ZoomVoronoi.hlsl</p>
+        <div class="imgs"><img src="img/HLSL.png"></div>
+
+        <div class="line"></div>
+
+
+    </div>
+</doby>
+</html>
