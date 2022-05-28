@@ -6,6 +6,7 @@
 
 .skill-item .name {
     font-size: 1.25vmax;
+    text-decoration: none;
 }
 
 .skill-item:hover {
@@ -29,6 +30,6 @@
     user-select: none;
     cursor: pointer;
     transition: all 0.3s;
+    color: #eeeeee;
+    text-decoration: none;
 }
-
-    

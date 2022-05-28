@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Daiki Shibata Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background">
+        <h1>「Addressable Asset System」でスクリプタブルオブジェクトをサーバーから取得する</h1>
+
+        <div class="line"></div>
+
+        <p>「Addressable Asset System」というものを使ってサーバーからスクリプタブルオブジェクトを取得する機構を作りました。</p>
+        <p>サーバーにゲームのデータを置いておくメリットは、サーバーの中身を変えるだけでゲームのアップデートが行えるというもので、
+        ゲーム本体をアップデートする必要がなく、主にソシャゲなどのアップデートを頻繁に行うゲームでは重宝されると思います。</p>
+
+        <div class="line"></div>
+
+        <p>まずはキャラクターステータスとしてスクリプタブルオブジェクトを作成します。</p>
+        <p>CharaStatus.cs</p>
+        <div class="imgs">
+            <img src="img/CharaStatus.png">
+        <p>CharaStatusScriptable.cs</p>
+            <img src="img/CharaStatusScriptable.png">
+        </div>
+        
+        <div class="line"></div>
+
+        <p>スクリプタブルオブジェクトを作成、Addressables Groupに登録<br>
+        登録したスクリプタブルオブジェクトを一括読み込みするためにchara_statusとしてラベル付けします。</p>
+        <div class="imgs">
+            <img src="img/Group.png">
+        </div>
+        <p>Addressables Groupをビルドします。</p>
+        <div class="imgs">
+            <img src="img/GroupBuild.png">
+        </div>
+        
+        <div class="line"></div>
+        
+        <p>ビルド後出力されたファイル3つをサーバー上にアップロードします。<br>
+        (今回はXFREEという無料サーバーを使いました。)</p>
+        <div class="imgs">
+            <img src="img/XFREE.png">
+        </div>
+        
+        <div class="line"></div>
+        
+        <p>サーバーにアップロードしたアセットを読み込むためのスクリプトを書きます<br>
+        (アップロードしたファイルのパスを指定するなどの工程は今回は端折ります)</p>
+        <p>CharaStatusDB.cs</p>
+        <div class="imgs">
+            <img src="img/CharaStatusDB.png">
+        </div>
+        <p>Test.cs</p>
+        <div class="imgs">
+            <img src="img/Test.png">
+        </div>
+        
+        <div class="line"></div>
+
+        <p>Test.csを貼り付け、実行すると無事結果が返ってきました。</p>
+        <div class="imgs">
+            <img src="img/Result.png">
+        </div>
+    </div>
+</doby>
+</html>
