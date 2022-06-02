@@ -1,3 +1,8 @@
 .yellow-text {
     color:yellow;
 }
+
+#about p {
+    padding-left:4.5vmax;
+    padding-right:4.5vmax;
+}
