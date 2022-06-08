@@ -7,19 +7,19 @@
 #table-contents {
 	text-align: center;
 	display: table;
-	margin: 50px;
 	border-collapse: separate;
 	border-spacing: 4vmax 0;
+	margin: 50px;
 }
 
 .contents-button:hover {
 	color: #333333;
-	background-color: #eeeeee;
+	background-color: #eeeeeecc;
 }
 
 .contents-button {
 	color: #eeeeee;
-	background-color: #333333;
+	background-color: #33333399;
 	width: 10vmax;
 	height: 10vmax;
 	border: solid;

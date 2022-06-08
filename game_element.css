@@ -26,4 +26,6 @@
     padding: 3px;
     display: inline-block;
     border: thick double #eeeeee;
+    border-radius:2vmax;
+    overflow:hidden;
 }
