@@ -1,27 +1,35 @@
 #back_top_button {
-	position:fixed;
-	width:7vmax;
-	height:7vmax;
-	background-color:#eeeeee;
-	border-radius:50%;
+	position: fixed;
+	width: 7vmax;
+	height: 7vmax;
+	background-color: #333333;
+	border-radius: 50%;
+	border: solid #eeeeee;
 	right: 0;
 	bottom: 0;
-	margin-right:0.5vmax;
-	margin-bottom:0.5vmax;
+	margin-right: 0.5vmax;
+	margin-bottom: 0.5vmax;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	font-weight:bold;
+	font-weight: bold;
 	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	transition: all 0.3s;
+}
+#back_top_button:hover #back_top_button_text {
+	color: #333333;
 }
 
-#back_top_button:hover #back_top_button_text{
-}
 
+#back_top_button:hover {
+	background-color: #eeeeee;
+	border-color: #333333;
+}
+		
 #back_top_button:hover #back_top_button_triangle{
 	transform: rotate(180deg);
 	opacity:1;
@@ -31,7 +39,7 @@
 
 #back_top_button_triangle{
 	margin-bottom:1vmax;
-	background-color:#444444;
+	background-color:#333333;
 	width: 0vmax;
 	height: 0vmax;
 	opacity:0;
@@ -42,6 +50,6 @@
 #back_top_button_text{
 	margin-bottom:0.75vmax;
 	font-size:1vmax;
-	color:#444444;
+	color:#eeeeee;
 	transition: all 0.3s;
 }
