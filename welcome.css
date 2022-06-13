@@ -1,7 +1,12 @@
 #welcome-logo {
-	font-size: 2vmax;
+	font-size: 4vmax;
 	font-weight: bold;
-	margin:50px;
+	margin: 4vmax;
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS ProN W3", "Hiragino Kaku Gothic ProN", "ƒƒCƒŠƒI", "Meiryo", "verdana", sans-serif;
+}
+
+#welcome p {
+	margin: 1vmax;
 }
 
 #table-contents {
@@ -9,12 +14,12 @@
 	display: table;
 	border-collapse: separate;
 	border-spacing: 4vmax 0;
-	margin: 50px;
+	margin: 4vmax;
 }
 
 .contents-button:hover {
 	color: #333333;
-	background-color: #eeeeeecc;
+	background-color: #eeeeeeee;
 }
 
 .contents-button {
