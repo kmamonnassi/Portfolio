@@ -85,21 +85,21 @@ html, body {
 }
 
 #games {
-    background-color: #111111bb;
+    background-color: #111111cc;
     height: 140%;
 }
 
 #skills {
-    background-color: #333333bb;
+    background-color: #222222cc;
 }
 
 #profile {
-    background-color: #111111bb;
+    background-color: #111111cc;
     font-size: 1.15vmax;
 }
 
 #link {
-    background-color: #333333bb;
+    background-color: #222222cc;
     font-size: 1.15vmax;
 }
 
