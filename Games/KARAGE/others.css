@@ -1,12 +1,16 @@
+.twitter-tweet {
+    width: 10vw;
+}
 .other-contents {
-	display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin:0.25vmax;
+    margin: 0.25vmax;
     border-radius: 1vmax;
     border: 1px solid;
     padding: 15px;
+    width: 150vw;
 }
 
 #other-contents-layout {

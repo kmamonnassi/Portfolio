@@ -29,6 +29,7 @@
 .game-element {
     width: 21%;
     display: inline-block;
+    vertical-align: top;
     border: thick double #eeeeee;
     border-radius: 2vmax;
     overflow: hidden;

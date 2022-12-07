@@ -13,8 +13,9 @@
 	text-align: center;
 	display: table;
 	border-collapse: separate;
-	border-spacing: 4vmax 0;
-	margin: 4vmax;
+	border-spacing: 4vmin 0;
+	margin-top: 4vmax;
+	margin-bottom: 4vmax;
 }
 
 .contents-button:hover {
@@ -25,13 +26,13 @@
 .contents-button {
 	color: #eeeeee;
 	background-color: #33333399;
-	width: 10vmax;
-	height: 10vmax;
+	width: 150px;
+	height: 150px;
 	border: solid;
 	border-radius: 50%;
 	vertical-align: middle;
 	display: table-cell;
-	font-size: 2vmax;
+	font-size: 4vmin;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
